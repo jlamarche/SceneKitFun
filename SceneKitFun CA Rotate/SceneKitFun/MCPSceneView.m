@@ -67,10 +67,11 @@
     animation.duration = 3.f;
     animation.repeatCount = HUGE_VALF;
 
-    
     [torusNode addAnimation:animation forKey:@"transform"];
     
     
+
+
     
 }
 

@@ -57,10 +57,6 @@
     material.specular.contents = [NSColor whiteColor];
     material.shininess = 1.0;
     torus.materials = @[material];
-    
 
-    
-
-    
 }
 @end

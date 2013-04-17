@@ -68,10 +68,22 @@
                         nil];
     animation.duration = 3.f;
     animation.repeatCount = HUGE_VALF;
-    
-    
     [torusNode addAnimation:animation forKey:@"transform"];
     
+    
+    // Uncomment to see effect of animation on child node
+//    CAKeyframeAnimation *animation2 = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+//    animation2.values = [NSArray arrayWithObjects:
+//                        [NSValue valueWithCATransform3D:CATransform3DRotate(textNode.transform, 0 * M_PI / 2, 1.f, 0.5f, 0.f)],
+//                        [NSValue valueWithCATransform3D:CATransform3DRotate(textNode.transform, 1 * M_PI / 2, 1.f, 0.5f, 0.f)],
+//                        [NSValue valueWithCATransform3D:CATransform3DRotate(textNode.transform, 2 * M_PI / 2, 1.f, 0.5f, 0.f)],
+//                        [NSValue valueWithCATransform3D:CATransform3DRotate(textNode.transform, 3 * M_PI / 2, 1.f, 0.5f, 0.f)],
+//                        [NSValue valueWithCATransform3D:CATransform3DRotate(textNode.transform, 4 * M_PI / 2, 1.f, 0.5f, 0.f)],
+//                        nil];
+//    animation2.duration = 1.f;
+//    animation2.repeatCount = HUGE_VALF;
+//    [textNode addAnimation:animation2 forKey:@"transform"];
+
     
     
 }

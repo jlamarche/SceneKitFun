@@ -16,9 +16,14 @@
 {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Bendy" withExtension:@"dae"];
     
-    
     NSError * __autoreleasing error;
-    SCNScene *scene = [SCNScene sceneWithURL:url options:nil error:&error];
+    
+    NSDictionary *options = @{
+                        SCNSceneSourceCheckConsistencyKey : @NO,
+                        SCNSceneSourceStrictConformanceKey : @YES
+                        };
+    
+    SCNScene *scene = [SCNScene sceneWithURL:url options:options error:&error];
     if (scene)
         self.scene = scene;
     else
